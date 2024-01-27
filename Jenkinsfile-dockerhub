@@ -6,12 +6,12 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('C14-AMPDB-DH')
-    APP_NAME = "conrad/amazon"
+    APP_NAME = "ccjacobs14/amazon"
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/conrad/Amazon-clone-Dockerized.git'
+           git branch: 'main', url: 'https://github.com/ccjacobs14/Amazon-clone-Dockerized.git'
             }
         }
         // run sonarqube test
