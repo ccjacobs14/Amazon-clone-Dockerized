@@ -62,8 +62,8 @@ function Cart() {
         </div>
         {basket.length === 0 ? (
           <div>
-            <h2>Your basket is not empty</h2>
-            <h6>Start Adding Items to your basket</h6>
+            <h2>Your basket is not empty. Ooops!</h2>
+            <h6>Start Adding Items to your basket now</h6>
           </div>
         ) : (
           basket.map(displayCartItem)
